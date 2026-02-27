@@ -1,0 +1,570 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nina Tan — Fullstack Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <canvas id="three-canvas"></canvas>
+
+    <!-- NAV -->
+    <nav>
+      <a href="#hero" class="nav-logo">Nina Tan</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero">
+      <div class="hero-inner">
+        <p class="hero-eyebrow">Fullstack Engineer · Raleigh, NC</p>
+        <h1 class="hero-name">Nina <em>Tan</em></h1>
+        <p class="hero-title">Building things that help people.</p>
+        <p class="hero-desc">
+          I make distributed systems, thoughtful interfaces, and the occasional
+          Filipino Mahjong game. Currently at Bandwidth working on 911 call
+          routing infrastructure.
+        </p>
+        <div class="hero-links">
+          <a href="#projects" class="btn btn-primary">View my work</a>
+          <a href="mailto:ninavtan@gmail.com" class="btn btn-ghost"
+            >Get in touch</a
+          >
+        </div>
+      </div>
+      <div class="scroll-hint">
+        <div class="scroll-line"></div>
+        <span>scroll</span>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="content-section">
+        <p class="section-label">About me</p>
+        <h2 class="section-title">
+          Engineer by craft,<br /><em>builder by nature</em>
+        </h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              I'm a fullstack engineer with
+              <strong>3+ years at Bandwidth</strong> working across Java Spring
+              Boot backend services and React frontends. I love the full picture
+              — from API design to the pixels a user actually sees.
+            </p>
+            <p>
+              My background is a little unusual: I studied
+              <strong>Graphic Design and Public Policy</strong> at UNC Chapel
+              Hill before falling in love with software. That mix shapes how I
+              think about products — with both technical rigor and real care for
+              the person on the other side of the screen.
+            </p>
+            <p>
+              Outside work, I mentor with
+              <strong>Big Brothers Big Sisters</strong>,
+              <strong>UNC Girls Who Code</strong>, and
+              <strong>Pearl Hacks</strong> — because the best thing I can do
+              with a seat at the table is help pull more chairs up.
+            </p>
+          </div>
+          <div class="about-cards">
+            <div class="about-card">
+              <div class="about-card-icon">🎓</div>
+              <h4>UNC Chapel Hill</h4>
+              <p>
+                Honors B.A. Graphic Design · B.S. Public Policy · Minor CS ·
+                Class of 2019
+              </p>
+            </div>
+            <div class="about-card">
+              <div class="about-card-icon">☁️</div>
+              <h4>AWS Certified</h4>
+              <p>
+                Cloud Practitioner certified. Comfortable with cloud-native
+                infrastructure and deployment pipelines.
+              </p>
+            </div>
+            <div class="about-card">
+              <div class="about-card-icon">🏆</div>
+              <h4>Hackathon Winner</h4>
+              <p>
+                1st place, Bandwidth 2024 — Number Reputation Management
+                Checker. Culture Catalyst Award, 2026.
+              </p>
+            </div>
+            <div class="about-card">
+              <div class="about-card-icon">🧶</div>
+              <h4>Beyond the keyboard</h4>
+              <p>
+                Knitter, dog mom to Brie, and someone who will always recommend
+                a good matcha spot.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+      <div class="content-section">
+        <p class="section-label">Experience</p>
+        <h2 class="section-title">Where I've<br /><em>done the work</em></h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <p class="timeline-meta">June 2022 – Present · Raleigh, NC</p>
+            <h3 class="timeline-role">Software Developer — Fullstack</h3>
+            <p class="timeline-company">Bandwidth</p>
+            <ul class="timeline-bullets">
+              <li>
+                Built and maintained large-scale distributed 911 call routing
+                systems processing thousands of concurrent requests with Java
+                Spring Boot microservices.
+              </li>
+              <li>
+                Designed and extended REST APIs powering internal operational
+                tools used across engineering and support teams.
+              </li>
+              <li>
+                Drove architectural shift from batch processing to event-driven
+                pub/sub message queue after diagnosing a critical billing
+                data-loss incident.
+              </li>
+              <li>
+                Performed database schema migrations with Flyway across
+                production Postgres and MySQL environments as part of CI/CD
+                pipelines.
+              </li>
+              <li>
+                Led React + TypeScript frontends serving 10,000+ users; led
+                microfrontend migration using Webpack module federation.
+              </li>
+              <li>
+                Participated in on-call rotations and authored reusable
+                component libraries with Storybook documentation.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="content-section">
+        <p class="section-label">Projects</p>
+        <h2 class="section-title">Things I've<br /><em>built with love</em></h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div
+              class="project-card-header"
+              style="background: linear-gradient(135deg, #f0e0e8, #d4c8f0)"
+            >
+              <h3>Filipino Mahjong</h3>
+            </div>
+            <div class="project-card-body">
+              <p>
+                A full-stack web application for playing and learning Filipino
+                Mahjong — real-time game state management, 3D interactive
+                frontend, and persistent storage. Built end-to-end solo.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Java</span>
+                <span class="tag">Spring Boot</span>
+                <span class="tag mint">React</span>
+                <span class="tag mint">Three.js</span>
+                <span class="tag blush">SQLite</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div
+              class="project-card-header"
+              style="background: linear-gradient(135deg, #c8e8df, #d4c8f0)"
+            >
+              <h3>Number Reputation Checker</h3>
+            </div>
+            <div class="project-card-body">
+              <p>
+                🏆 1st place, Bandwidth Hackathon 2025. A full-stack voice API
+                application aggregating phone number reputation data with
+                gamification features and real-time scoring.
+              </p>
+              <div class="project-tags">
+                <span class="tag mint">React</span>
+                <span class="tag mint">Node.js</span>
+                <span class="tag blush">REST APIs</span>
+                <span class="tag">TypeScript</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div
+              class="project-card-header"
+              style="background: linear-gradient(135deg, #f7d6d0, #f0e0e8)"
+            >
+              <h3>This Portfolio ✦</h3>
+            </div>
+            <div class="project-card-body">
+              <p>
+                You're looking at it. Built with vanilla HTML, CSS, and Three.js
+                — floating glowing flowers, custom cursor, and scroll
+                animations.
+              </p>
+              <div class="project-tags">
+                <span class="tag blush">Three.js</span>
+                <span class="tag blush">CSS</span>
+                <span class="tag">Animation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <div class="content-section">
+        <p class="section-label">Skills</p>
+        <h2 class="section-title">Tools of<br /><em>the craft</em></h2>
+        <div class="skills-grid">
+          <div class="skill-group">
+            <div class="skill-group-icon icon-lavender">⚙️</div>
+            <h4>Backend</h4>
+            <div class="skill-pills">
+              <span class="skill-pill">Java</span>
+              <span class="skill-pill">Spring Boot</span>
+              <span class="skill-pill">REST APIs</span>
+              <span class="skill-pill">JPA/Hibernate</span>
+              <span class="skill-pill">MySQL</span>
+              <span class="skill-pill">PostgreSQL</span>
+              <span class="skill-pill">Event-driven arch.</span>
+              <span class="skill-pill">Go (learning)</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <div class="skill-group-icon icon-blush">🎨</div>
+            <h4>Frontend</h4>
+            <div class="skill-pills">
+              <span class="skill-pill">React</span>
+              <span class="skill-pill">TypeScript</span>
+              <span class="skill-pill">JavaScript</span>
+              <span class="skill-pill">Three.js</span>
+              <span class="skill-pill">Cypress</span>
+              <span class="skill-pill">Jest</span>
+              <span class="skill-pill">Webpack</span>
+              <span class="skill-pill">Storybook</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <div class="skill-group-icon icon-mint">☁️</div>
+            <h4>Cloud & Infra</h4>
+            <div class="skill-pills">
+              <span class="skill-pill">AWS (certified)</span>
+              <span class="skill-pill">Docker</span>
+              <span class="skill-pill">Ansible</span>
+              <span class="skill-pill">Jenkins</span>
+              <span class="skill-pill">GitHub Actions</span>
+              <span class="skill-pill">CI/CD</span>
+              <span class="skill-pill">Flyway</span>
+              <span class="skill-pill">Kubernetes</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <div class="skill-group-icon icon-rose">✦</div>
+            <h4>& beyond</h4>
+            <div class="skill-pills">
+              <span class="skill-pill">Distributed Systems</span>
+              <span class="skill-pill">Microservices</span>
+              <span class="skill-pill">Code Reviews</span>
+              <span class="skill-pill">Mentorship</span>
+              <span class="skill-pill">Graphic Design</span>
+              <span class="skill-pill">Technical Writing</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="content-section" style="text-align: center; margin: 0 auto">
+        <p class="section-label" style="justify-content: center">Contact</p>
+        <h2 class="section-title">
+          Let's build<br /><em>something together</em>
+        </h2>
+        <p class="contact-intro">
+          Whether you have a role in
+          mind, want to talk craft, or just want to say hi — my inbox is always
+          open.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:ninavtan@gmail.com" class="btn btn-primary"
+            >ninavtan@gmail.com</a
+          >
+          <a
+            href="https://linkedin.com/in/ninatan8"
+            target="_blank"
+            class="btn btn-ghost"
+            >LinkedIn</a
+          >
+          <a
+            href="https://github.com/hi-im-nina"
+            target="_blank"
+            class="btn btn-ghost"
+            >GitHub</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>© 2026 Nina Tan. Built with Three.js.</p>
+      <span class="footer-flourish">made with ✦</span>
+    </footer>
+
+    <script>
+      // ─── SCROLL REVEAL ────────────────────────────────────────
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry, i) => {
+            if (entry.isIntersecting) {
+              setTimeout(() => entry.target.classList.add("visible"), i * 120);
+            }
+          });
+        },
+        { threshold: 0.1 },
+      );
+
+      document
+        .querySelectorAll(".timeline-item, .project-card, .skill-group")
+        .forEach((el) => {
+          observer.observe(el);
+        });
+
+      // ─── THREE.JS FLOWERS ────────────────────────────────────
+      const canvas = document.getElementById("three-canvas");
+      const renderer = new THREE.WebGLRenderer({
+        canvas,
+        antialias: true,
+        alpha: true,
+      });
+      renderer.setSize(window.innerWidth, window.innerHeight);
+      renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+      renderer.setClearColor(0x000000, 0);
+
+      const scene = new THREE.Scene();
+      const camera = new THREE.PerspectiveCamera(
+        60,
+        window.innerWidth / window.innerHeight,
+        0.1,
+        100,
+      );
+      camera.position.z = 8;
+
+      // Pastel colors
+      const COLORS = [
+        { main: 0xedb5ac, glow: 0xf7d6d0 }, // blush
+        { main: 0xb8a9e0, glow: 0xd4c8f0 }, // lavender
+        { main: 0xa3d4c8, glow: 0xc8e8df }, // mint
+        { main: 0xe8c4d4, glow: 0xf0e0e8 }, // rose
+        { main: 0xd4c8f0, glow: 0xe8e0f8 }, // soft purple
+      ];
+
+      // Build a flower mesh
+      function createFlower(colorPair, size) {
+        const group = new THREE.Group();
+        const petalCount = Math.floor(5 + Math.random() * 3);
+        const mat = new THREE.MeshBasicMaterial({
+          color: colorPair.main,
+          transparent: true,
+          opacity: 0.55,
+          side: THREE.DoubleSide,
+        });
+
+        for (let i = 0; i < petalCount; i++) {
+          const angle = (i / petalCount) * Math.PI * 2;
+          // Petal shape using ellipse
+          const shape = new THREE.Shape();
+          shape.moveTo(0, 0);
+          shape.bezierCurveTo(
+            size * 0.3,
+            size * 0.5,
+            size * 0.6,
+            size * 0.9,
+            0,
+            size,
+          );
+          shape.bezierCurveTo(
+            -size * 0.6,
+            size * 0.9,
+            -size * 0.3,
+            size * 0.5,
+            0,
+            0,
+          );
+          const geo = new THREE.ShapeGeometry(shape);
+          const petal = new THREE.Mesh(geo, mat.clone());
+          petal.rotation.z = angle;
+          petal.position.set(
+            Math.cos(angle) * size * 0.25,
+            Math.sin(angle) * size * 0.25,
+            0,
+          );
+          group.add(petal);
+        }
+
+        // Center
+        const centerGeo = new THREE.CircleGeometry(size * 0.22, 16);
+        const centerMat = new THREE.MeshBasicMaterial({
+          color: colorPair.glow,
+          transparent: true,
+          opacity: 0.85,
+        });
+        const center = new THREE.Mesh(centerGeo, centerMat);
+        center.position.z = 0.01;
+        group.add(center);
+
+        // Glow sprite
+        const glowGeo = new THREE.CircleGeometry(size * 0.85, 24);
+        const glowMat = new THREE.MeshBasicMaterial({
+          color: colorPair.glow,
+          transparent: true,
+          opacity: 0.07,
+          side: THREE.DoubleSide,
+          depthWrite: false,
+        });
+        const glow = new THREE.Mesh(glowGeo, glowMat);
+        glow.position.z = -0.01;
+        group.add(glow);
+
+        return group;
+      }
+
+      // Spawn flowers
+      const flowers = [];
+      const FLOWER_COUNT = 38;
+
+      for (let i = 0; i < FLOWER_COUNT; i++) {
+        const colorPair = COLORS[Math.floor(Math.random() * COLORS.length)];
+        const size = 0.08 + Math.random() * 0.32;
+        const flower = createFlower(colorPair, size);
+
+        const spread = 14;
+        flower.position.set(
+          (Math.random() - 0.5) * spread,
+          (Math.random() - 0.5) * spread * 0.6,
+          (Math.random() - 0.5) * 5,
+        );
+
+        flower.rotation.z = Math.random() * Math.PI * 2;
+        flower.userData = {
+          speedX: (Math.random() - 0.5) * 0.0015,
+          speedY: 0.0008 + Math.random() * 0.001,
+          rotSpeed: (Math.random() - 0.5) * 0.008,
+          bobFreq: 0.4 + Math.random() * 0.8,
+          bobAmp: 0.008 + Math.random() * 0.015,
+          bobOffset: Math.random() * Math.PI * 2,
+          pulseFreq: 0.5 + Math.random() * 1,
+          pulseOffset: Math.random() * Math.PI * 2,
+          initY: flower.position.y,
+          initScale: size,
+        };
+        scene.add(flower);
+        flowers.push(flower);
+      }
+
+      // Mouse influence
+      let mouseX = 0,
+        mouseY = 0;
+      document.addEventListener("mousemove", (e) => {
+        mouseX = (e.clientX / window.innerWidth - 0.5) * 0.6;
+        mouseY = -(e.clientY / window.innerHeight - 0.5) * 0.4;
+      });
+
+      let targetCamX = 0,
+        targetCamY = 0;
+
+      // Animate
+      const clock = new THREE.Clock();
+      function animate() {
+        requestAnimationFrame(animate);
+        const t = clock.getElapsedTime();
+
+        targetCamX += (mouseX - targetCamX) * 0.02;
+        targetCamY += (mouseY - targetCamY) * 0.02;
+        camera.position.x = targetCamX;
+        camera.position.y = targetCamY;
+        camera.lookAt(scene.position);
+
+        flowers.forEach((flower) => {
+          const d = flower.userData;
+
+          // Float upward, reset when off screen
+          flower.position.y += d.speedY;
+          flower.position.x += d.speedX;
+
+          // Gentle bob
+          flower.position.y += Math.sin(t * d.bobFreq + d.bobOffset) * d.bobAmp;
+
+          // Rotate
+          flower.rotation.z += d.rotSpeed;
+
+          // Pulse scale
+          const pulse = 1 + 0.06 * Math.sin(t * d.pulseFreq + d.pulseOffset);
+          flower.scale.setScalar(pulse);
+
+          // Opacity pulse on petals
+          flower.children.forEach((child, idx) => {
+            if (child.material && idx < flower.children.length - 2) {
+              child.material.opacity =
+                0.4 + 0.2 * Math.sin(t * d.pulseFreq + d.pulseOffset);
+            }
+          });
+
+          // Reset if floated too high
+          if (flower.position.y > 8) {
+            flower.position.y = -8;
+            flower.position.x = (Math.random() - 0.5) * 14;
+          }
+          if (flower.position.x > 8) flower.position.x = -8;
+          if (flower.position.x < -8) flower.position.x = 8;
+        });
+
+        renderer.render(scene, camera);
+      }
+      animate();
+
+      window.addEventListener("resize", () => {
+        camera.aspect = window.innerWidth / window.innerHeight;
+        camera.updateProjectionMatrix();
+        renderer.setSize(window.innerWidth, window.innerHeight);
+      });
+    </script>
+  </body>
+</html>
